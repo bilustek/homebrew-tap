@@ -8,8 +8,12 @@ class Gosecrets < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/gosecrets"
-    bash_completion.install Utils.safe_popen_read(bin/"gosecrets", "completion", "bash").strip => "gosecrets"
+    system "go", "build", *std_go_args, "./cmd/gosecrets"
+    generate_completions_from_executable(
+      bin/"gosecrets",
+      "completion",
+      shells: [:bash],
+    )
   end
 
   test do
