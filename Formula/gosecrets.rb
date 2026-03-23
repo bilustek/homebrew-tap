@@ -5,6 +5,11 @@ class Gosecrets < Formula
   sha256 "b0367ecfd330187606f22171d70d7f33d4a77bd43f6e8da66bcb1c46e8c2f7b5"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/bilustek/homebrew-tap/releases/download/gosecrets-0.3.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "13e547fe8604b15bac5efbddc946db0e3147ab004bda30012a4d2b47d96808ec"
+  end
+
   depends_on "go" => :build
 
   def install
