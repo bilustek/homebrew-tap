@@ -1,8 +1,8 @@
 class Gosecrets < Formula
   desc "Encrypted credentials management CLI tool"
   homepage "https://github.com/bilustek/gosecrets"
-  url "https://github.com/bilustek/gosecrets/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "b0367ecfd330187606f22171d70d7f33d4a77bd43f6e8da66bcb1c46e8c2f7b5"
+  url "https://github.com/bilustek/gosecrets/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "2f74ad9525cde1b1981a80ba808e3fbb945faeb1603ab45e7910fd142bbf47f5"
   license "MIT"
 
   bottle do
