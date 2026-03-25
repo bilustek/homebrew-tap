@@ -6,8 +6,8 @@ class Gosecrets < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/bilustek/homebrew-tap/releases/download/gosecrets-0.3.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "13e547fe8604b15bac5efbddc946db0e3147ab004bda30012a4d2b47d96808ec"
+    root_url "https://github.com/bilustek/homebrew-tap/releases/download/gosecrets-0.4.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "037bfc3a3e44ff448859ee9ad603336b46ea859c85a66c90d4a999440ffd45a1"
   end
 
   depends_on "go" => :build
